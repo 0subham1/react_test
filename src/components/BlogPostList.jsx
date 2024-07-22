@@ -30,7 +30,7 @@ const BlogPostList = () => {
 
   return (
     <div>
-      <h2>BlogPostList</h2>
+      <h2 className="head">BlogPostList</h2>
 
       <Grid container spacing={2} className="gridContainer">
         {blogList?.length > 0 ? (

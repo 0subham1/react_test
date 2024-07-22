@@ -11,7 +11,7 @@ const BlogPostDetails = () => {
   const navigate = useNavigate();
   return (
     <div>
-      <h2>BlogPostDetails</h2>
+      <h2 className="head">BlogPostDetails</h2>
       <Card>
         <CardMedia sx={{ height: 440 }} image={state?.urlToImage} />
 

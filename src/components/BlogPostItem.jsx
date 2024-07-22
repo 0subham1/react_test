@@ -15,12 +15,14 @@ const BlogPostItem = ({ item, index }) => {
       sx={{
         padding: "10px",
         width: "20rem",
-        height: "15rem",
+        height: "12rem",
         display: "flex",
         justifyContent: "space-between",
         flexDirection: "column !important",
         alignItems: "flex-start",
+        cursor: "pointer",
       }}
+      onClick={() => navigate(`/post/${index}`, { state: item })}
     >
       <div>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
@@ -34,15 +36,6 @@ const BlogPostItem = ({ item, index }) => {
       <div style={{ overflowY: "scroll", height: "10rem" }}>
         <Typography variant="body2">{item?.description}</Typography>
       </div>
-
-      <CardActions>
-        <Button
-          size="small"
-          onClick={() => navigate(`/post/${index}`, { state: item })}
-        >
-          Learn More
-        </Button>
-      </CardActions>
     </Card>
   );
 };

@@ -1,5 +1,5 @@
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 0px;
 }
 ::-webkit-scrollbar-track {
   background: rgb(255, 255, 255);
@@ -13,4 +13,10 @@
   justify-content: space-around;
   align-items: center;
   /* margin: 0.5rem; */
+}
+
+.head {
+  background: linear-gradient(71.66deg, #ffffff -2.97%, #0fa9ff 111.3%);
+  padding: 5px;
+  border-radius: 5px;
 }

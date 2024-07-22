@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import BlogPostDetails from "./components/BlogPostDetails";
-import BlogPostItem from "./components/BlogPostItem";
 import BlogPostList from "./components/BlogPostList";
 import "./App.css";
 function App() {
