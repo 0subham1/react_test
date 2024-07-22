@@ -13,6 +13,10 @@ const BlogPostList = () => {
   let url =
     "https://newsapi.org/v2/everything?q=apple&from=2024-07-21&to=2024-07-21&sortBy=popularity&apiKey=0b44583a4fe847cd8f47704541631b9b";
 
+  let url2 = "https://back-foodcart.vercel.app/newsapi/bloglist";
+  //erro: "Requests from the browser are not allowed on the Developer plan, except from localhost."
+  // The live api have this issue after production, so I copied the response and hosted on my server
+
   const [blogList, setblogList] = useState(store?.blogs);
   const [currentPage, setCurrentPage] = useState(state ? state : 1);
   const recordPerPage = 6;
@@ -29,10 +33,10 @@ const BlogPostList = () => {
 
   const handleGetBlogPost = () => {
     axios
-      .get(url)
+      .get(url2)
       .then((res) => {
-        setblogList(res?.data?.articles);
-        setStore({ ...store, blogs: res?.data?.articles });
+        setblogList(res?.data);
+        setStore({ ...store, blogs: res?.data });
       })
       .catch((err) => {
         console.log(err, "err");
