@@ -1,5 +1,5 @@
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 5px;
 }
 ::-webkit-scrollbar-track {
   background: rgb(255, 255, 255);
@@ -19,4 +19,20 @@
   background: linear-gradient(71.66deg, #ffffff -2.97%, #0fa9ff 111.3%);
   padding: 5px;
   border-radius: 5px;
+}
+
+.pageKey {
+  margin: 0.2rem;
+  cursor: pointer;
+}
+
+#itemCard {
+  padding: 10px;
+  width: 20rem;
+  height: 12rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column !important;
+  align-items: flex-start;
+  cursor: pointer;
 }
